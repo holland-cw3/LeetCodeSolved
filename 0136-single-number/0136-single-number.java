@@ -3,8 +3,7 @@ class Solution {
         HashMap<Integer, Integer> frequency = new HashMap<>();
 
         for(int num : nums){
-            int frequ = frequency.containsKey(num) ? frequency.get(num) + 1 : 1;
-            frequency.put(num, frequ);
+            frequency.put(num, frequency.containsKey(num) ? frequency.get(num) + 1 : 1);
         }
 
         for(int key : frequency.keySet()){
